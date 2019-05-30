@@ -73,6 +73,16 @@ nav, p {
   max-width: 65em;
 }
 
+/*Image Modifiers */
+.team-pic {
+  margin:0 auto;
+  border-radius: 50%;
+  width: 28%;
+  padding:1px;
+  border:1px solid #F5F0F0;
+  background-color:#4682b4;
+}
+
 
 /*
  * Header
