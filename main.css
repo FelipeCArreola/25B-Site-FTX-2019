@@ -56,14 +56,6 @@ nav, p {
     margin: 0 auto;
 }
 
-.box-transp-f {
-  background: rgba(0, 0, 0, 0.41);
-  border-radius: 35px;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: auto;
-}
-
 .brand-icon {
     margin:0 auto;
     width: 58%;
@@ -73,16 +65,69 @@ nav, p {
   max-width: 65em;
 }
 
+.imgGrid-container {
+  max-width: 40em;
+}
+
 /*Image Modifiers */
 .team-pic {
-  margin:0 auto;
   border-radius: 50%;
-  width: 28%;
+  opacity: 0.6;
+  width:50%;
+}
+
+.HULK:hover {
+  opacity: 1;
+} 
+.IRONMAN:hover {
+  opacity: 1;
+}
+.STRANGE:hover {
+  opacity: 1;
+} 
+.THOR:hover { 
+  opacity: 1; 
+}
+
+/* Image Grid*/
+.row {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+
+}
+
+.column {
+  flex: 25%;
+  max-width: 85%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   padding:1px;
   border:1px solid #F5F0F0;
   background-color:#4682b4;
+  width:60%;
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 /*
  * Header
